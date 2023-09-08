@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成普通二维码</title>
+</head>
+<body>
+<h1>生成普通二维码</h1>
+<hr>
+请输入文本内容：<input type="text" id="url"><button onclick="gen()">生成二维码</button><br>
+<img id="img">
+</body>
+
+<script>
+    function gen(){
+        document.getElementById("img").src="/qrcode?url="+document.getElementById('url').value
+    }
+</script>
+</html>
